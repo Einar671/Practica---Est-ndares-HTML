@@ -2,24 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=900, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca barrial</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Biblioteca Barrial</h1>
+        <h1>Biblioteca La Viña</h1>
     </header>  
-    <nav>
-        <a href="#inicio">Sobre Nosotros</a>
-        <a href="#subir">Sube tu libro</a>
-        <a href="#contacto">Contactanos</a>
+    <nav arial-label="información">
+        <ul>
+            <li><a href=#info>Sobre nosotros</a></li>
+            <li><a href=#subir>Sube tu libro</a></li>
+            <li><a href=#horarios>Horarios</a></li>
+            <li><a href=#contactanos>Contactanos</a></li>
+        </ul>
     </nav>
 
     <main>
-      <aside>
 
-      </aside>  
+        <section>
+            <h2 id="info"> Sobre nosotros </h2>
+            <p> Nuestra biblioteca barrial es el rincón donde las historias y los vecinos se encuentran. 
+                En Bibilioteca La Viña trabajamos para democratizar el acceso a la información y la cultura, 
+                brindando un espacio seguro, inclusivo y acogedor para todos en Biblioteca La Viña. Más que prestar libros, 
+                construimos comunidad a través del aprendizaje compartido, ofreciendo un lugar donde niños, jóvenes y adultos 
+                pueden imaginar, estudiar y crecer juntos. ¡Ven a descubrir tu próxima gran aventura!
+            </p>
+        </section>
+
+        <section>
+            <h2 >Horarios</h2>
+            <fieldset>
+            <table>
+                <caption>Nuestras horas de puertas abiertas</caption>
+                <thead>
+                    <tr>
+                        <td scope="col"></td>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miercoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                        <th scope="col">Sabados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"> Horarios</th>
+                        <td> De 9 am a 7 pm </td>
+                        <td> De 10 am a 8 pm</td>
+                        <td> De 8 am a 8 pm</td>
+                        <td> De 9 am a 10 pm</td>
+                        <td> De 2 pm a 7 pm</td>
+                        <td> De 12 pm a 8pm</td>
+                    </tr>
+                </tbody>
+            </table>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2 id="subir"> Sube tu libro</h2>
+            <label for="archivo"> Sube tu archivo aqui</label>
+            <input type="file" id="archivo" name="SubeTuArchivo" accept=".pdf,.doc,.docx,.ppt,.pptx">
+        </section>
+        
+        
+        <section>
+            <h2 id="contactanos">Contactanos</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend> Datos necesarios </legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="numero">Numero telefonico</label>
+                    <input type="text" id="numero" name="numero" pattern="[0-9]{10}" requierd >
+                    <label for="direccion">Direccion</label>
+                    <input type="text" id="direccion" name="direccion">
+                    <label for="mensaje">Danos tu comentario</label>
+                    <input type="text" id="mensaje" name="mensaje" required >
+                </fieldset>
+            </form>
+        </section>
+        
+    
     </main>
 
 
