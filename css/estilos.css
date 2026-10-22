@@ -109,4 +109,27 @@ fieldset { border: 1px solid var(--color-texto); }
 label { display: block; margin-top: .75rem; font-weight: 600; }
 input, textarea { width: 100%; padding: .5rem; font: inherit; }
 
+/* Carga de archivo con tipos restringidos */
+input[type="file"] { width: 100%; }
+input[type="file"]:invalid { outline: 2px solid var(--color-enfasis); }
+input:user-invalid,
+textarea:user-invalid { border-color: var(--color-enfasis); }
 
+button {
+    margin-top: 1rem;
+    padding: .6rem 1.2rem;
+    background: var(--color-enfasis);
+    color: var(--color-blanco);
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Aside */
+aside { background: var(--color-fondo-secundario); padding: 1rem ; text-align: center;}
+aside ul { list-style: none; margin: 0; padding: 0; }
+aside li { margin-bottom: 1rem; }
+aside img {width: 200px;}
+
+/* Footer */
+footer { border-top: 2px solid var(--color-enfasis); padding-top: 1rem; }
