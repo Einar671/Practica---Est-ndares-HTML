@@ -9,7 +9,7 @@
 <body>
     <header>
         <img src="img/logo.png" alt="logo Biblioteca La viña">
-        <h1>Biblioteca La Viña</h1>
+        <h1><a href="index.html">Briblioteca La Viña</a></h1>
     </header>  
     <nav aria-label="información">
         <ul>
@@ -32,7 +32,16 @@
                 pueden imaginar, estudiar y crecer juntos. ¡Ven a descubrir tu próxima gran aventura!
             </p>
         </section>
-        
+        <section>
+            <h2 id="subir"> Sube tu libro</h2>
+            <form method="post" action="#">
+                <label for="archivo"> Sube tu archivo aqui</label>
+                <input type="file" id="archivo" name="SubeTuArchivo" accept=".pdf,.doc,.docx,.ppt,.pptx,.epub" required 
+                aria-describedby="ayuda-archivo">
+                <p id="ayuda-archivo" aria-describedby="Formatos permitidos PDF, DOC, DOCX, PPT, PPTX y EPUB">Formatos permitidos: PDF, DOC, DOCX, PPT, PPTX y EPUB.</p>
+                <button type="submit">Sube tu libro</button>
+            </form>
+        </section>
         <section>
             <h2 id="horarios">Horarios</h2>
             
