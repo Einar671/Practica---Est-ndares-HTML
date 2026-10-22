@@ -1,0 +1,61 @@
+:root {
+    --color-texto: #3D2616;
+    --color-enfasis: #A8432E;
+    --color-enlaces: #4A5D23;
+    --color-fondo: #FDFBF7;
+    --color-fondo-secundario: #E8F0F2;
+    --color-blanco: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2 { color: var(--color-enfasis); margin: 0 0 .5rem; }
+
+a { color: var(--color-enlaces); }
+
+img { max-width: 100%; height: auto; }
+
+/* Foco visible en todos los elementos interactivos */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-enfasis);
+    outline-offset: 2px;
+}
+
+/* Enlace "Saltar al contenido" (sin clase) */
+body > a:first-child {
+    position: absolute;
+    left: -999px;
+}
+body > a:first-child:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 10;
+    padding: .5rem 1rem;
+    background: var(--color-blanco);
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;/* Formularios */
+
+}
+header img { width: 80px; }
+
