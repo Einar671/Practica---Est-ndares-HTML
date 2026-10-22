@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca barrial</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
+        <img src="img/logo.png" alt="logo Biblioteca La viña">
         <h1>Biblioteca La Viña</h1>
     </header>  
-    <nav arial-label="información">
+    <nav aria-label="información">
         <ul>
-            <li><a href=#info>Sobre nosotros</a></li>
-            <li><a href=#subir>Sube tu libro</a></li>
-            <li><a href=#horarios>Horarios</a></li>
-            <li><a href=#contactanos>Contactanos</a></li>
+            <li><a href="#info">Sobre nosotros</a></li>
+            <li><a href="#subir">Sube tu libro</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="#contactanos">Contactanos</a></li>
         </ul>
     </nav>
 
@@ -23,7 +24,8 @@
 
         <section>
             <h2 id="info"> Sobre nosotros </h2>
-            <p> Nuestra biblioteca barrial es el rincón donde las historias y los vecinos se encuentran. 
+            <p> 
+                Nuestra biblioteca barrial es el rincón donde las historias y los vecinos se encuentran. 
                 En Bibilioteca La Viña trabajamos para democratizar el acceso a la información y la cultura, 
                 brindando un espacio seguro, inclusivo y acogedor para todos en Biblioteca La Viña. Más que prestar libros, 
                 construimos comunidad a través del aprendizaje compartido, ofreciendo un lugar donde niños, jóvenes y adultos 
@@ -32,13 +34,13 @@
         </section>
 
         <section>
-            <h2 >Horarios</h2>
-            <fieldset>
+            <h2 id="horarios">Horarios</h2>
+            
             <table>
                 <caption>Nuestras horas de puertas abiertas</caption>
                 <thead>
                     <tr>
-                        <td scope="col"></td>
+                        <td></td>
                         <th scope="col">Lunes</th>
                         <th scope="col">Martes</th>
                         <th scope="col">Miercoles</th>
@@ -59,13 +61,16 @@
                     </tr>
                 </tbody>
             </table>
-            </fieldset>
+            
         </section>
 
         <section>
             <h2 id="subir"> Sube tu libro</h2>
-            <label for="archivo"> Sube tu archivo aqui</label>
-            <input type="file" id="archivo" name="SubeTuArchivo" accept=".pdf,.doc,.docx,.ppt,.pptx">
+            <form method="post">
+                <label for="archivo"> Sube tu archivo aqui</label>
+                <input type="file" id="archivo" name="SubeTuArchivo" accept=".pdf,.doc,.docx,.ppt,.pptx,.epub" required enctype="multipart/form-data">
+                <button type="submit">Sube tu libro</button>
+            </form>
         </section>
         
         
@@ -79,22 +84,42 @@
                     <label for="email">Correo</label>
                     <input type="email" id="email" name="email" required>
                     <label for="numero">Numero telefonico</label>
-                    <input type="text" id="numero" name="numero" pattern="[0-9]{10}" requierd >
-                    <label for="direccion">Direccion</label>
-                    <input type="text" id="direccion" name="direccion">
+                    <input type="tel" id="numero" name="numero" pattern="[0-9]{10}" required >
+                    <label for="edad">Edad*</label>
+                    <input type="number" id="edad" name="edad" max="99" min="12">
                     <label for="mensaje">Danos tu comentario</label>
-                    <input type="text" id="mensaje" name="mensaje" required >
+                    <textarea name="mensaje" id=mensaje rows="5" cols="33"></textarea>
+                    <button type="submit"> Enviar información</button>
                 </fieldset>
             </form>
         </section>
-        
-    
+
+        <aside>
+            <h2> Libros recomendados para la semana</h2>
+            <ul>
+                <li>
+                    El Principito de Antoine de Saint-Exupéry
+                    <img src="img/principito.webp" alt="portada principito">
+                </li>
+                <li>
+                    La sombra del viento de Carlos Ruiz Zafón
+                    <img src="img/viento.webp" alt="portada la sombra del viento">                
+                </li>
+                <li>
+                    La casa de los espíritus de Isabel Allende
+                    <img src="img/isabel.webp" alt="portada de la casa de los espíritus">
+                </li>
+                <li>
+                    El infinito en un junco de Irene Vallejo
+                    <img src="img/infinito.webp" alt="portada El infinito en un junco">
+                </li>
+            </ul>
+        </aside>
     </main>
 
 
     <footer>
-
-
+        <p> Encuentranos en la Ricardo Duran y Pedro Bougue o En el Mall del alto</p>
     </footer>
 
 </body>
