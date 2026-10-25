@@ -26,7 +26,7 @@
             <h2 id="info"> Sobre nosotros </h2>
             <p> 
                 Nuestra biblioteca barrial es el rincón donde las historias y los vecinos se encuentran. 
-                En Bibilioteca La Viña trabajamos para democratizar el acceso a la información y la cultura, 
+                En Biblioteca La Viña trabajamos para democratizar el acceso a la información y la cultura, 
                 brindando un espacio seguro, inclusivo y acogedor para todos en Biblioteca La Viña. Más que prestar libros, 
                 construimos comunidad a través del aprendizaje compartido, ofreciendo un lugar donde niños, jóvenes y adultos 
                 pueden imaginar, estudiar y crecer juntos. ¡Ven a descubrir tu próxima gran aventura!
@@ -34,11 +34,11 @@
         </section>
         <section>
             <h2 id="subir"> Sube tu libro</h2>
-            <form method="post" action="#">
-                <label for="archivo"> Sube tu archivo aqui</label>
+            <form enctype="multipart/form-data" action="#">
+                <label for="archivo"> Sube tu archivo aquí</label>
                 <input type="file" id="archivo" name="SubeTuArchivo" accept=".pdf,.doc,.docx,.ppt,.pptx,.epub" required 
-                aria-describedby="ayuda-archivo">
-                <p id="ayuda-archivo" aria-describedby="Formatos permitidos PDF, DOC, DOCX, PPT, PPTX y EPUB">Formatos permitidos: PDF, DOC, DOCX, PPT, PPTX y EPUB.</p>
+                aria-describedby="ayuda">
+                <p id="ayuda">Formatos permitidos: .pdf,.doc,.docx,.ppt,.pptx,.epub</p>
                 <button type="submit">Sube tu libro</button>
             </form>
         </section>
@@ -49,24 +49,22 @@
                 <caption>Nuestras horas de puertas abiertas</caption>
                 <thead>
                     <tr>
-                        <td></td>
                         <th scope="col">Lunes</th>
                         <th scope="col">Martes</th>
-                        <th scope="col">Miercoles</th>
+                        <th scope="col">Miércoles</th>
                         <th scope="col">Jueves</th>
                         <th scope="col">Viernes</th>
-                        <th scope="col">Sabados</th>
+                        <th scope="col">Sábados</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row"> Horarios</th>
                         <td> De 9 am a 7 pm </td>
                         <td> De 10 am a 8 pm</td>
                         <td> De 8 am a 8 pm</td>
                         <td> De 9 am a 10 pm</td>
                         <td> De 2 pm a 7 pm</td>
-                        <td> De 12 pm a 8pm</td>
+                        <td> De 12 pm a 8 pm</td>
                     </tr>
                 </tbody>
             </table>
@@ -74,7 +72,7 @@
         </section>
         
         <section>
-            <h2 id="contactanos">Contactanos</h2>
+            <h2 id="contactanos">Contáctanos</h2>
             <form action="#" method="post">
                 <fieldset>
                     <legend> Datos necesarios </legend>
