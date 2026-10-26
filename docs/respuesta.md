@@ -11,7 +11,7 @@
 | N.º | Hallazgo | Norma | Evidencia antes y después | Commit |
 |---|---|---|---|---|
 | A | El CSS define `body > a:first-child` ("Saltar al contenido", líneas 39-50) pero el HTML no tiene ese enlace; las reglas nunca se aplican. Se agrega `<a href="#principal">Saltar al contenido</a>` como primer hijo de `body` (el `id="principal"` ya existía en `main`). | WCAG 2.2, criterio 2.4.1 Evitar bloques | Antes: Tab primero enfoca el logo; el selector no coincide con ningún elemento. Después: Tab primero muestra el enlace, que lleva a `main`.| `Decimo commit` |
-| B | La tabla de horarios tiene 7 columnas y no cabe en 320 px: la página se desplaza en horizontal. Se envuelve en `<div role="region" aria-label="Horarios" tabindex="0">` con `overflow-x: auto`, sin cambiar el `display` de la tabla. | WCAG 2.2, criterios 1.4.10 Reflow y 2.1.1 Teclado | Antes: desplazamiento horizontal de toda la página a 320 px. Después: solo se desplaza la tabla y es alcanzable con Tab.| `Decimo commit` |
+| B | La tabla de horarios tiene 7 columnas y no cabe en 320 px: la página se desplaza en horizontal. Se envuelve en `<div role="region" aria-label="Horarios" tabindex="0">` con `overflow-x: auto`, ademas de reducir a seis columnas, sin cambiar el `display` de la tabla. | WCAG 2.2, criterios 1.4.10 Reflow y 2.1.1 Teclado | Antes: desplazamiento horizontal de toda la página a 320 px. Después: solo se desplaza la tabla y es alcanzable con Tab.| `Decimo commit` |
 
 ## Validación final
 
