@@ -36,15 +36,6 @@ textarea:focus-visible {
     outline-offset: 2px;
 }
 
-/* Enlace "Saltar al contenido" (sin clase) */
-body > a:first-child:focus {
-    left: 1rem;
-    top: 1rem;
-    z-index: 10;
-    padding: .5rem 1rem;
-    background: var(--color-blanco);
-}
-
 /* Header */
 header {
     display: flex;
